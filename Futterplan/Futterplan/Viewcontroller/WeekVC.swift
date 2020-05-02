@@ -53,7 +53,7 @@ class WeekVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIGe
     
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-                let url = "http://192.168.100.5:8888/futterplan/api/getfood.php"
+                let url = "http://192.168.100.2/futterplan/api/getfood.php"
                 let parameters: [String: Any] = [
 //                    "aufwand" : 1,
                     "mode" : "random"
@@ -136,7 +136,7 @@ class WeekVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIGe
             let tmpButton = self.view.viewWithTag(i) as? UIButton
             if tmpButton?.currentImage == checkBoxSelected {
                 
-                        let url = "http://192.168.100.5:8888/futterplan/api/getfood.php"
+                        let url = "http://192.168.100.2/futterplan/api/getfood.php"
                         let parameters: [String: Any] = [
 //                            "aufwand" : 1,
                             "mode" : "random"
@@ -164,7 +164,7 @@ class WeekVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIGe
     
     @IBAction func saveButton(_ sender: UIButton) {
         
-        let url = "http://192.168.100.5:8888/futterplan/api/setfood.php"
+        let url = "http://192.168.100.2/futterplan/api/setfood.php"
         
          var returnDic:[String:String] = [:]
          

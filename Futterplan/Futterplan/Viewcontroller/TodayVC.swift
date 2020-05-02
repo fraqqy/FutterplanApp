@@ -23,7 +23,7 @@ class TodayVC: UIViewController {
     
     
     @IBAction func loadEssen(_ sender: UIButton) {
-        let url = "http://192.168.100.5:8888/futterplan/api/getfood.php"
+        let url = "http://192.168.100.2/futterplan/api/getfood.php"
         let parameters: [String: Any] = [
             "aufwand" : 1,
             "mode" : "random"

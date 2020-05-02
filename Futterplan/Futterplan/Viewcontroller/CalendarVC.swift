@@ -125,7 +125,7 @@ class CalendarVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
      }
     
     func loadFood(id: String) {
-        let url = "http://192.168.100.5:8888/futterplan/api/getdetail.php"
+        let url = "http://192.168.100.2/futterplan/api/getdetail.php"
         let parameters: [String: Any] = [
             "id" : id
         ]
@@ -152,7 +152,7 @@ class CalendarVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     func loadWeek(today: Int) {
         
-        let url = "http://192.168.100.5:8888/futterplan/api/getweek.php"
+        let url = "http://192.168.100.2/futterplan/api/getweek.php"
         let parameters: [String: Any] = [
             "mode" : today
         ]
