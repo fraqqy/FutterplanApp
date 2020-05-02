@@ -18,7 +18,18 @@ class StartscreenVC: UIViewController {
     
 
     @IBAction func todayButton(_ sender: UIButton) {
-        performSegue(withIdentifier: "segueToToday", sender: nil)
+        
+        switch sender.tag {
+        case 0:
+            performSegue(withIdentifier: "segueToToday", sender: nil)
+        case 1:
+            performSegue(withIdentifier: "segueToWeek", sender: nil)
+        case 2:
+            performSegue(withIdentifier: "segueToCalendar", sender: nil)
+        default:
+            print("Error performing Segue")
+        }
+        
     }
     /*
     // MARK: - Navigation

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		623E46D3245ADF8400678B33 /* DetailFoodVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623E46D2245ADF8400678B33 /* DetailFoodVC.swift */; };
 		6258200D2444B2A80041C3C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6258200C2444B2A80041C3C5 /* AppDelegate.swift */; };
 		6258200F2444B2A80041C3C5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6258200E2444B2A80041C3C5 /* SceneDelegate.swift */; };
 		625820142444B2A80041C3C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 625820122444B2A80041C3C5 /* Main.storyboard */; };
@@ -15,11 +16,15 @@
 		6258201C2444B2AA0041C3C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6258201A2444B2AA0041C3C5 /* LaunchScreen.storyboard */; };
 		625820272444B4890041C3C5 /* TodayVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625820262444B4890041C3C5 /* TodayVC.swift */; };
 		625820292444B5870041C3C5 /* StartscreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625820282444B5870041C3C5 /* StartscreenVC.swift */; };
+		62A2981024587DE900FC7C4A /* WeekVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A2980F24587DE900FC7C4A /* WeekVC.swift */; };
+		62B3D46D2459A2500082BC3F /* CalendarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B3D46C2459A2500082BC3F /* CalendarVC.swift */; };
+		62B3D4712459CEBF0082BC3F /* CalendarFood.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B3D4702459CEBF0082BC3F /* CalendarFood.swift */; };
 		D149E6D80FEB10DF4F8AA8F4 /* Pods_Futterplan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B851EDB16D445F7CB7446FB /* Pods_Futterplan.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3B851EDB16D445F7CB7446FB /* Pods_Futterplan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Futterplan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		623E46D2245ADF8400678B33 /* DetailFoodVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailFoodVC.swift; sourceTree = "<group>"; };
 		625820092444B2A80041C3C5 /* Futterplan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Futterplan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6258200C2444B2A80041C3C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6258200E2444B2A80041C3C5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -30,6 +35,9 @@
 		6258201D2444B2AA0041C3C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		625820262444B4890041C3C5 /* TodayVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayVC.swift; sourceTree = "<group>"; };
 		625820282444B5870041C3C5 /* StartscreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartscreenVC.swift; sourceTree = "<group>"; };
+		62A2980F24587DE900FC7C4A /* WeekVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekVC.swift; sourceTree = "<group>"; };
+		62B3D46C2459A2500082BC3F /* CalendarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarVC.swift; sourceTree = "<group>"; };
+		62B3D4702459CEBF0082BC3F /* CalendarFood.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarFood.swift; sourceTree = "<group>"; };
 		96297968026D2DD3D6E736D9 /* Pods-Futterplan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Futterplan.release.xcconfig"; path = "Target Support Files/Pods-Futterplan/Pods-Futterplan.release.xcconfig"; sourceTree = "<group>"; };
 		AD9C2A8038F2905FAA85F29D /* Pods-Futterplan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Futterplan.debug.xcconfig"; path = "Target Support Files/Pods-Futterplan/Pods-Futterplan.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -67,6 +75,7 @@
 		6258200B2444B2A80041C3C5 /* Futterplan */ = {
 			isa = PBXGroup;
 			children = (
+				62A29811245889EC00FC7C4A /* Methods */,
 				625820232444B3940041C3C5 /* Viewcontroller */,
 				6258200C2444B2A80041C3C5 /* AppDelegate.swift */,
 				6258200E2444B2A80041C3C5 /* SceneDelegate.swift */,
@@ -84,8 +93,19 @@
 			children = (
 				625820262444B4890041C3C5 /* TodayVC.swift */,
 				625820282444B5870041C3C5 /* StartscreenVC.swift */,
+				62A2980F24587DE900FC7C4A /* WeekVC.swift */,
+				62B3D46C2459A2500082BC3F /* CalendarVC.swift */,
+				623E46D2245ADF8400678B33 /* DetailFoodVC.swift */,
 			);
 			path = Viewcontroller;
+			sourceTree = "<group>";
+		};
+		62A29811245889EC00FC7C4A /* Methods */ = {
+			isa = PBXGroup;
+			children = (
+				62B3D4702459CEBF0082BC3F /* CalendarFood.swift */,
+			);
+			path = Methods;
 			sourceTree = "<group>";
 		};
 		7CBD9CD74E81E125E04527E9 /* Frameworks */ = {
@@ -222,7 +242,11 @@
 			files = (
 				625820172444B2A80041C3C5 /* Futterplan.xcdatamodeld in Sources */,
 				625820272444B4890041C3C5 /* TodayVC.swift in Sources */,
+				62A2981024587DE900FC7C4A /* WeekVC.swift in Sources */,
+				62B3D4712459CEBF0082BC3F /* CalendarFood.swift in Sources */,
 				625820292444B5870041C3C5 /* StartscreenVC.swift in Sources */,
+				623E46D3245ADF8400678B33 /* DetailFoodVC.swift in Sources */,
+				62B3D46D2459A2500082BC3F /* CalendarVC.swift in Sources */,
 				6258200D2444B2A80041C3C5 /* AppDelegate.swift in Sources */,
 				6258200F2444B2A80041C3C5 /* SceneDelegate.swift in Sources */,
 			);
@@ -379,7 +403,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = wk.Futterplan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -398,7 +422,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = wk.Futterplan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
